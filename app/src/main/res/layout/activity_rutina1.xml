@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".Rutina1Activity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt1"
+                    android:onClick="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt1"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count1TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Jumping jacks"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_jumping_jacks" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt2"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt2"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count2TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Wall sit"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_wall_sit" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt3"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cornerRadius="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt3"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count3TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Push up"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_push_up" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt4"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cornerRadius="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt4"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count4TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Abdominal crunch"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_abdominal_crunch" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt5"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt5"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count5TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Step up onto chair"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_step_up_onto_chair" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt6"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cornerRadius="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt6"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count6TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Squat"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_squat" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt7"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cornerRadius="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt7"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count7TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Triceps dip on chair"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_triceps_dip_on_chair" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt8"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt8"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count8TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Plank"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_plank" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt9"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt9"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count9TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="High knees run in place"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_high_knees_running_in_place" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt10"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt10"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count10TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Lunges"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_lunge" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/playBt11"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt11"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count11TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Push up and rotation"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_push_up_and_rotation" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp"
+                android:layout_marginBottom="35dp">
+
+                <Button
+                    android:id="@+id/playBt12"
+                    android:onClick="on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#9759D173"
+                    android:text="Start" />
+
+                <Button
+                    android:id="@+id/stopBt12"
+                    android:onClick="stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#CBFD3D3D"
+                    android:text="Stop"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/count12TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80"
+                    android:text="Side plank (15 seg por lado)"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_side_plank" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/finBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:text="finalizar"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

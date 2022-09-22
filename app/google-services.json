@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "570020736207",
+    "firebase_url": "https://selfk-c9280-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "selfk-c9280",
+    "storage_bucket": "selfk-c9280.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570020736207:android:aafc368039b106f09d1bba",
+        "android_client_info": {
+          "package_name": "com.example.SelfK"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570020736207-40o74e20ls1vo2ikumsj48hto6do08b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEpvy583RA2O1woNouMTGBSgyd_R657po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570020736207-40o74e20ls1vo2ikumsj48hto6do08b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570020736207:android:d1945cd0707830949d1bba",
+        "android_client_info": {
+          "package_name": "com.example.selfk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570020736207-40o74e20ls1vo2ikumsj48hto6do08b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEpvy583RA2O1woNouMTGBSgyd_R657po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570020736207-40o74e20ls1vo2ikumsj48hto6do08b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570020736207:android:e70c638e3d542ee69d1bba",
+        "android_client_info": {
+          "package_name": "com.example.selfk2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570020736207-40o74e20ls1vo2ikumsj48hto6do08b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEpvy583RA2O1woNouMTGBSgyd_R657po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570020736207-40o74e20ls1vo2ikumsj48hto6do08b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

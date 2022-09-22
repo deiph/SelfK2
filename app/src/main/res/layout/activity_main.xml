@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/histBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Historial"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="@+id/imcBt"
+        app:layout_constraintTop_toBottomOf="@+id/imcBt" />
+
+    <Button
+        android:id="@+id/inicioBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="104dp"
+        app:cornerRadius="20dp"
+        android:text="Iniciar entrenamiento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/imcBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:cornerRadius="20dp"
+        android:text="Calcular imc"
+        app:layout_constraintStart_toStartOf="@+id/inicioBt"
+        app:layout_constraintTop_toBottomOf="@+id/inicioBt" />
+
+    <Button
+        android:id="@+id/deleteHistBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:text="borrar historial"
+        android:textSize="10sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toEndOf="@+id/histBt"
+        app:layout_constraintTop_toBottomOf="@+id/imcBt" />
+
+    <TextView
+        android:id="@+id/saludoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
